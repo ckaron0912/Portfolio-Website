@@ -11,7 +11,8 @@
 
     <title>Chad Karon</title>
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ 
+    google material design-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -20,8 +21,8 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -44,6 +45,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#page-top">Chad Karon</a>
+                    <img class="img-responsive prof-img" src="img/profile.png" alt="">
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,10 +55,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href=".port">Portfolio</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="docs/ChadKaron_GDD_Resume.pdf" target="_blank">Resume</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -73,11 +78,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name">Chad Karon</span>
-                        <hr class="star-light">
                         <span class="skills">Web Developer - Game Designer/Programmer</span>
+                        <hr class="star-light">
+                      <span class="skills"><strong>Recent Project</strong></span>
+    <section id="portfolio" class="featured">
+            <div class="row">
+                <div class="portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/bloxeo.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+    </section>
                     </div>
                 </div>
             </div>
@@ -85,7 +103,7 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section id="portfolio" class="port">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -95,23 +113,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/crystal.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/lava.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/bloxeo.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -135,13 +143,33 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/bloxio.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/youdog.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/lava.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/crystal.png" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -157,12 +185,12 @@
                     <hr class="star-light">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <div class="row about">
+                <div>
+                    <p>-Programmer for gameplay / back-end / front-end<br><br>
+                      -Creative 3D modeler<br><br>
+                      -Cooperative team member<br><br>
+                      -Website development and testing skills</p>
                 </div>
             </div>
         </div>
@@ -179,9 +207,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
+                  <span class="specifics"><strong>Phone: </strong>(310) 429-3841</span><span class="specifics"><strong>Email: </strong>ckaron0912@gmail.com</span>
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <!--<form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
@@ -217,7 +246,7 @@
                                 <button type="submit" class="btn btn-success btn-lg">Send</button>
                             </div>
                         </div>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </div>
@@ -230,22 +259,16 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>315-A Perkins road<br>Rochester, NY 14623</p>
+                        <p>Rumson, NJ</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/chadtk" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="https://github.com/ckaron0912" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -256,7 +279,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Copyright &copy; Chad Karon 2017
                     </div>
                 </div>
             </div>
@@ -301,8 +324,8 @@
                               resolution is locked to 1080. 
                               Unfortunately, this means that smaller resolution moniters will cut off some of 
                                 the game.</span><br>
-                              Link to game: <a class="links" href="projects/Crystalline-Collector">Crystalline Collector</a><br>
-                              Link to Github: <a class="links" href="https://github.com/kurtstohrer/-GDD2project2">Crystalline Collector</a>
+                              Link to game: <a class="links" href="projects/Crystalline-Collector" target="_blank">Crystalline Collector</a><br>
+                              Link to Github: <a class="links" href="https://github.com/kurtstohrer/-GDD2project2" target="_blank">Crystalline Collector</a>
                               </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -312,7 +335,7 @@
                                 </li>
                                 <li>Date:
                                     <strong>
-                                      <span class="specifics">April 2015</span>
+                                      <span class="specifics">November 2014</span>
                                     </strong>
                                 </li>
                                 <li>Service:
@@ -358,8 +381,8 @@
                             resolution is locked to 1080. 
                             Unfortunately, this means that smaller resolution moniters will cut off some of 
                               the game.</span><br>
-                            Link to game: <a class="links" href="projects/Lava-Leap">Lava Leap</a><br>
-                            Link to Github: <a class="links" href="https://github.com/kurtstohrer/Lava-Leap">Lava Leap</a>
+                            Link to game: <a class="links" href="projects/Lava-Leap" target="_blank">Lava Leap</a><br>
+                            Link to Github: <a class="links" href="https://github.com/kurtstohrer/Lava-Leap" target="_blank">Lava Leap</a>
                             </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -369,7 +392,7 @@
                                 </li>
                                 <li>Date:
                                     <strong>
-                                      <span class="specifics">October 2014</span>
+                                      <span class="specifics">December 2014</span>
                                     </strong>
                                 </li>
                                 <li>Service:
@@ -402,22 +425,23 @@
                             <img src="img/portfolio/chuters.png" class="img-responsive img-centered" alt="">
                             <p>Chuters is a casual game made by Derrick Hunt and myself. The player controls a soldier who is being parachuted into enemy
                               territory. It is an endless game that continues until the player has run out of lives and every 3 successful consecutive landings earn them
-                              an airstrike. Derrick was in charge 
-                              of<br>
-                            Link to game: <a class="links" href="projects/Chuters">Chuters</a><br>
-                            Link to Github: <a class="links" href="https://github.com/ckaron0912/casualGames">Chuters</a>
+                              an airstrike. My contribution was mostly gameplay as well as some code to play animations from a sprite sheet.<br>
+                            Link to game: <a class="links" href="projects/Chuters" target="_blank">Chuters</a>
                             </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    <strong>
+                                      <span class="specifics">College Project</span>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong>
+                                      <span class="specifics">April 2015</span>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>
+                                      <span class="specifics">Web Development/Game Design</span>
                                     </strong>
                                 </li>
                             </ul>
@@ -443,18 +467,39 @@
                             <h2>Project Title</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/admiralty.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>Admiralty is a game, slightly based off 
+                              Cookie Clicker. It is a project 
+                              showcasing server  programming. The 
+                              requirements were to make a server using 
+                              Node.js, express, MongoDB, Redis, Jade 
+                              and Javascript. It also had to make use 
+                              of user accounts. In the game, players
+                              have a steady income of resources and 
+                              they use these resource to buy ships to 
+                              increase their war score. Different types 
+                              of ships offer their own score and miners 
+                              increase the rate that resources come in. 
+                              This was a solo project and was 
+                              programmed entirly by me. The only things 
+                              I cannot take credit for are the 
+                              countdown circles and the ship art, both 
+                              of which was found for free online.<br>
+                            Link to game: <a class="links" href="http://admiralty.herokuapp.com/" target="_blank">Admiralty</a><br>
+                            Link to Github: <a class="links" href="https://github.com/ckaron0912/rich-media-mvc-project" target="_blank">Admiralty</a></p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    <strong>
+                                      <span class="specifics">College Project</span>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong>
+                                      <span class="specifics">November 2015</span>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>
+                                      <span class="specifics">Web Development/Game Design</span>
                                     </strong>
                                 </li>
                             </ul>
@@ -477,21 +522,31 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Bloxeo</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/bloxio.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/bloxeo.png" class="img-responsive img-centered" alt="">
+                            <p>Bloxeo is a web-based collaborative 
+                              brainstorming application. It was made 
+                              in an effort to make it easier on 
+                              teams to come up with new ideas and vote 
+                              on them. My contribution was back-end server development along with 5 others 
+                              and were part of a larger team of 21 
+                              people for a whole semester.<br>
+                            Link to Deck: <a class="links" href="projects/Bloxeo/bloxeo_deck.pdf" target="_blank">Bloxeo</a><br></p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    <strong>
+                                      <span class="specifics">College Project</span>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong>
+                                      <span class="specifics">December 2015</span>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>
+                                      <span class="specifics">Web Development</span>
                                     </strong>
                                 </li>
                             </ul>
@@ -514,21 +569,38 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>YouDog Magic</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/youdog.png" class="img-responsive img-centered" alt="">
+                            <p>YouDog Magic is a web app that allows a 
+                              person to search for Magic: The Gathering 
+                              cards. It also shows possible prices as 
+                              well as a link to where it may be 
+                              puchased. The project was to make a web 
+                              that made use of two different web APIs.
+                              One API is a database that contains all 
+                              of the cards and images along with 
+                              estimated prices. The other provides a 
+                              link that automatically searches ebay for 
+                              the card. It was created in a team of two 
+                              I was responsible for making sure the 
+                              Magic API worked and displayed properly 
+                              as well as the color scheme.<br>
+                            Link to WebApp: <a class="links" href="https://people.rit.edu/ctk5520/330/p2/p2.html" target="_blank">YouDog Magic</a><br></p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    <strong>
+                                      <span class="specifics">College Project</span>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    <strong>
+                                      <span class="specifics">May 2014</span>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>
+                                      <span class="specifics">Web Development</span>
                                     </strong>
                                 </li>
                             </ul>
@@ -547,7 +619,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
