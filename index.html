@@ -26,12 +26,12 @@
 
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/shared/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" ng-app="PortfolioApp">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -103,7 +103,7 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="port">
+    <section id="portfolio" class="port" ng-controller="ProjectController">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -111,67 +111,8 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/bloxeo.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/chuters.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/admiralty.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/youdog.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/lava.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/crystal.png" class="img-responsive" alt="">
-                    </a>
-                </div>
+            <div class="projectGrid" ng-repeat="project in projects">
+              <project-grid info="project"></project-grid>
             </div>
         </div>
     </section>
@@ -294,341 +235,42 @@
     </div>
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Crystalline Collector</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/crystal.png" class="img-responsive img-centered" alt="">
-                            <p>One of my first projects, the objective
-                              is to collect as many crystals as
-                              possible. Whoever has the most when
-                              the timer runs out wins. There are
-                              various power-ups that can increase
-                              max speed, acceleration, size or weight.
-                              It was created in a team of 4 and my
-                              contribution was mainly in gameplay and
-                              coding animations with spritesheets (including the background image transitions).
-                              The project was created in HTML5, Canvas
-                              and javascript.<br>
-                              <span class="notice"><strong>Notice</strong>: Due to complications, this games
-                              resolution is locked to 1080.
-                              Unfortunately, this means that smaller resolution moniters will cut off some of
-                                the game.</span><br>
-                              Link to game: <a class="links" href="projects/Crystalline-Collector" target="_blank">Crystalline Collector</a><br>
-                              Link to Github: <a class="links" href="https://github.com/kurtstohrer/-GDD2project2" target="_blank">Crystalline Collector</a>
-                              </p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                      <span class="specifics">College Project</span>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                      <span class="specifics">November 2014</span>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                      <span class="specifics">Web Development/Game Design</span>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Lava Leap</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/lava.png" class="img-responsive img-centered" alt="">
-                            <p>Lava Leap is an arcade-like platformer
-                            wher the objective is to stay alive as
-                            long as possible. The game features
-                            various platform types that all affect
-                            the player differently. The longer the
-                            player survives, the faster the game scrolls. It also has local multiplayer.
-                            2 players with the keyboard or 4 players
-                            Gamepads. I worked in a group of 4 and
-                            my responsibility was working on gameplay
-                            as well as coding the animations of the
-                            characters and platforms.<br>
-                            <span class="notice"><strong>Notice</strong>: Due to complications, this games
-                            resolution is locked to 1080.
-                            Unfortunately, this means that smaller resolution moniters will cut off some of
-                              the game.</span><br>
-                            Link to game: <a class="links" href="projects/Lava-Leap" target="_blank">Lava Leap</a><br>
-                            Link to Github: <a class="links" href="https://github.com/kurtstohrer/Lava-Leap" target="_blank">Lava Leap</a>
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                      <span class="specifics">College Project</span>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                      <span class="specifics">December 2014</span>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                      <span class="specifics">Web Development/Game Design</span>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Chuters</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/chuters.png" class="img-responsive img-centered" alt="">
-                            <p>Chuters is a casual game made by Derrick Hunt and myself. The player controls a soldier who is being parachuted into enemy
-                              territory. It is an endless game that continues until the player has run out of lives and every 3 successful consecutive landings earn them
-                              an airstrike. My contribution was mostly gameplay as well as some code to play animations from a sprite sheet.<br>
-                            Link to game: <a class="links" href="projects/Chuters" target="_blank">Chuters</a>
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                      <span class="specifics">College Project</span>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                      <span class="specifics">April 2015</span>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                      <span class="specifics">Web Development/Game Design</span>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/admiralty.png" class="img-responsive img-centered" alt="">
-                            <p>Admiralty is a game, slightly based off
-                              Cookie Clicker. It is a project
-                              showcasing server  programming. The
-                              requirements were to make a server using
-                              Node.js, express, MongoDB, Redis, Jade
-                              and Javascript. It also had to make use
-                              of user accounts. In the game, players
-                              have a steady income of resources and
-                              they use these resource to buy ships to
-                              increase their war score. Different types
-                              of ships offer their own score and miners
-                              increase the rate that resources come in.
-                              This was a solo project and was
-                              programmed entirly by me. The only things
-                              I cannot take credit for are the
-                              countdown circles and the ship art, both
-                              of which was found for free online.<br>
-                            Link to game: <a class="links" href="http://admiralty.herokuapp.com/" target="_blank">Admiralty</a><br>
-                            Link to Github: <a class="links" href="https://github.com/ckaron0912/rich-media-mvc-project" target="_blank">Admiralty</a></p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                      <span class="specifics">College Project</span>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                      <span class="specifics">November 2015</span>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                      <span class="specifics">Web Development/Game Design</span>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Bloxeo</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/bloxeo.png" class="img-responsive img-centered" alt="">
-                            <p>Bloxeo is a web-based collaborative
-                              brainstorming application. It was made
-                              in an effort to make it easier on
-                              teams to come up with new ideas and vote
-                              on them. My contribution was back-end server development along with 5 others
-                              and were part of a larger team of 21
-                              people for a whole semester.<br>
-                            Link to Deck: <a class="links" href="projects/Bloxeo/bloxeo_deck.pdf" target="_blank">Bloxeo</a><br></p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                      <span class="specifics">College Project</span>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                      <span class="specifics">December 2015</span>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                      <span class="specifics">Web Development</span>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>YouDog Magic</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/youdog.png" class="img-responsive img-centered" alt="">
-                            <p>YouDog Magic is a web app that allows a
-                              person to search for Magic: The Gathering
-                              cards. It also shows possible prices as
-                              well as a link to where it may be
-                              puchased. The project was to make a web
-                              that made use of two different web APIs.
-                              One API is a database that contains all
-                              of the cards and images along with
-                              estimated prices. The other provides a
-                              link that automatically searches ebay for
-                              the card. It was created in a team of two
-                              I was responsible for making sure the
-                              Magic API worked and displayed properly
-                              as well as the color scheme.<br>
-                            Link to WebApp: <a class="links" href="projects/YouDog-Magic/index.html" target="_blank">YouDog Magic</a><br></p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>
-                                      <span class="specifics">College Project</span>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>
-                                      <span class="specifics">May 2014</span>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>
-                                      <span class="specifics">Web Development</span>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="modalContainer" ng-controller="ProjectController">
+      <div class="modals" ng-repeat="project in projects">
+        <project-modal info="project"><project-modal>
+      </div>
     </div>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/shared/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/shared/bootstrap.min.js"></script>
+
+    <!-- Angular Core JavaScript -->
+    <script src="js/shared/angular.min.js"></script>
+
+    <!-- Angular Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Angular Controllers -->
+    <script src="js/controllers/ProjectController.js"></script>
+
+    <!-- Angular Directives -->
+    <script src="js/directives/projectModal.js"></script>
+    <script src="js/directives/projectGrid.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/shared/classie.js"></script>
+    <script src="js/shared/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="js/shared/jqBootstrapValidation.js"></script>
+    <script src="js/shared/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+    <script src="js/shared/freelancer.js"></script>
 
 </body>
 

@@ -1,0 +1,53 @@
+<div class="portfolio-modal modal fade" id="{{ info.modal_id }}" tabindex="-1" role="dialog" aria-hidde="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>{{ info.title }}</h2>
+            <hr class="star-primary">
+            <img src="{{ info.img }}" class="img-responsive img-centered" alt="">
+            <p>
+              {{ info.desc }}
+              <br>
+              <br>
+              Link to project: <a class="links" href="{{ info.url }}" target="_blank">{{ info.title }}</a>
+              <br id="breakForGit">
+              Link to Github: <a class="links" href="{{ info.gitUrl }}" target="_blank">{{ info.title }}</a>
+            </p>
+            <ul class="list-inline item-details">
+              <li>
+                Client:
+                <strong>
+                  <span class="specifics">{{ info.client }}</span>
+                </strong>
+              </li>
+              <li>
+                Date:
+                <strong>
+                  <span class="specifics">{{ info.date }}</span>
+                </strong>
+              </li>
+              <li>
+                Service:
+                <strong>
+                  <span class="specifics">{{ info.service }}</span>
+                </strong>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
