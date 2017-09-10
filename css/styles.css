@@ -40,3 +40,9 @@
 
   text-align: center;
 }
+
+@media screen and (max-width:768px){
+  .navbar-brand{
+    margin-top:17px
+  }
+}
