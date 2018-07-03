@@ -2,7 +2,7 @@ app.controller('ProjectController', ['$scope', function($scope){
 
   $scope.projects = [
     {
-      modal_id: 'portfolioModal6',
+      modal_id: 'portfolioModal7',
       title: 'Take It or Leave It',
       img: 'img/portfolio/take-it-win.png',
       desc: 'A poker based tournament where each player accumulates as many points as possible during their round of play The goal is to make a poker hand of Two Pair Aces Up or better As long as the player achieves their goal, they will continue to play If the player doesn’t achieve their goal for the predetermined amount of games, their tournament round is over and their score is posted The player is dealt 5 cards and then will be dealt 6 more cards – one at a time The player has the choice to “Take” or “Leave” each card that is presented If the player takes a card, they must discard one of their cards Points are awarded for every winning hand\n- After every winning hand, the points awarded will increase',
